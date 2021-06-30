@@ -44,19 +44,16 @@ label
     color: rgb(78, 95, 111);
 }
 
-
-input[name],
+input:focus {
+    outline-color: rgb(56, 85, 120);
+}
+input[name^="user"],
 select {
-    width: 100%;
-    padding: 15px 5px;
+    width: 95%;
+    padding: 15px 10px;
     border-style: none;
     border-radius: 5px;
     background-color: rgb(235, 236, 238);
-}
-
-input[placeholder] {
-    text-align: right;
-    
 }
 
 
@@ -66,19 +63,27 @@ input[placeholder] {
     margin-bottom: 25px;
 }
 
+#state {
+width: 100%;
+}
+
 input[radio],
 input[checkbox] {
     padding: 0 5px;
 }
 
 
+
+
 textarea {
+    font-family: 'Merriweather', sans-serif;
     width: 100%;
     height: 100px;
     margin-bottom: 20px;
     background-color: rgb(235, 236, 238);
     border-style: none;
     border-radius: 5px;
+    resize: none;
 }
 button {
     width: 100%;
@@ -102,6 +107,12 @@ border-top: 6px double black;
 
 .break2 {
     border-top: 3px solid black;
+}
+
+
+/* psuedo-elements */
+::placeholder {
+    text-align: right;
 }
 
 /* Media Queries */
