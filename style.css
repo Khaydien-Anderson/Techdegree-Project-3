@@ -1,11 +1,8 @@
 /* Base Style */
-html {
-    
-    font-family: 'Merriweather', sans-serif;
-}
 
 html, body {
     margin: 0;
+    font-family: 'Merriweather', sans-serif;
    }
 header {
 background-color: rgb(35, 43, 53, 0.9);
@@ -39,19 +36,34 @@ footer {
 fieldset {
     border-style: none;   
 }
-label {
+label
+{
     font-weight: 400;
     display: inline-block;
     padding: 0.75em 0;
     color: rgb(78, 95, 111);
 }
 
-input[name] {
+
+input[name],
+select {
     width: 100%;
-    padding: 15px 0;
+    padding: 15px 5px;
     border-style: none;
     border-radius: 5px;
     background-color: rgb(235, 236, 238);
+}
+
+input[placeholder] {
+    text-align: right;
+    
+}
+
+
+#zip {
+    display: block;
+    width: 50%;
+    margin-bottom: 25px;
 }
 
 input[radio],

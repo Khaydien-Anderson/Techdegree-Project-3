@@ -23,10 +23,10 @@
                     <fieldset class="form1">
                         <legend><h2>Contact Information</h2></legend>
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="username">
+                            <input type="text" id="name" name="username" placeholder="Required">
 
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" name="usermail">
+                            <input type="email" id="email" name="usermail" placeholder="Required">
 
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="userphone">
@@ -35,19 +35,72 @@
                             <input type="text" id="city" name="usercity">
 
                             <label for="state">State</label>
-                            <input type="text" id="state" name="userstate">
+                            <select id="state" name="userstate">
+                                <option value="" disabled selected>Choose State</option>                               
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>	
 
                             <label for="zip">Zip Code</label>
-                            <input type="zip" id="zip" name="userzip"><hr class="break2">
+                            <input type="text" id="zip" name="userzip"><hr class="break2">
                         </fieldset>
 <fieldset class="form2">
     <legend><h2>Newsletter</h2></legend>
                         <label>Select the newsletters you would like to receieve</label><br>
-                            <input id="html" type="checkbox"><label for="html">HTML News</label><br>
+                            <input id="html" type="checkbox" value="htmlnews"><label for="html">HTML News</label><br>
 
-                            <input id="css" type="checkbox"> <label for="css">CSS News</label><br>
+                            <input id="css" type="checkbox" value="chckbox"> <label for="css">CSS News</label><br>
 
-                            <input id="java" type="checkbox"> <label for="java">Javascript News</label><br>
+                            <input id="java" type="checkbox" value="javanews"> <label for="java">Javascript News</label><br>
 
                         <label>Newsletter format</label><br>
 
@@ -55,9 +108,9 @@
 
                             <input id="plaintext" type="radio"> <label for="plaintext">Plain text</label>
 
-                        <p>Other topics you'd like to hear about</p>
+                        <label for="txt">Other topics you'd like to hear about</label>
 
-                        <textarea></textarea><br>
+                        <textarea id="txt"></textarea><br>
 
                         <button type="submit">Sign Up</button>
                     </fieldset>
@@ -67,6 +120,7 @@
                     
                 </form>
         </div>
-</body>
+
 <footer><p>Copyright The Code Review</p></footer>
+</body>
 </html>
