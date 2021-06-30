@@ -44,7 +44,8 @@ label
     color: rgb(78, 95, 111);
 }
 
-input:focus {
+input:focus,
+#state:focus {
     outline-color: rgb(56, 85, 120);
 }
 input[name^="user"],
@@ -112,11 +113,16 @@ border-top: 6px double black;
 
 /* psuedo-elements */
 ::placeholder {
+    font-family: 'Merriweather', sans-serif;
     text-align: right;
+    font-style: italic;
+    padding-right: 2px;
 }
 
 /* Media Queries */
-@media (min-width: 369px) {
-
+@media (min-width: 768px) {
+#zip {
+    width: 25%;
+}
 
 }
