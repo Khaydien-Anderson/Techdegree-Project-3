@@ -3,11 +3,12 @@
 html, body {
     margin: 0;
     font-family: 'Merriweather', sans-serif;
+    box-sizing: border-box;
    }
 header {
 background-color: rgb(35, 43, 53, 0.9);
 text-align: center;
-padding: 25px 30px;
+padding: 15px 30px;
 color: white;
 }
 
@@ -44,13 +45,19 @@ label
     color: rgb(78, 95, 111);
 }
 
+input, select{
+  
+}
+
 input:focus,
 #state:focus {
     outline-color: rgb(56, 85, 120);
 }
 input[name^="user"],
 select {
-    width: 95%;
+    width:100%;
+  box-sizing:border-box;
+    
     padding: 15px 10px;
     border-style: none;
     border-radius: 5px;
@@ -64,12 +71,11 @@ select {
     margin-bottom: 25px;
 }
 
-#state {
-width: 100%;
-}
+
 
 input[radio],
 input[checkbox] {
+    display: inline-flex;
     padding: 0 5px;
 }
 
@@ -121,8 +127,33 @@ border-top: 6px double black;
 
 /* Media Queries */
 @media (min-width: 768px) {
+.form1 {
+    box-sizing: border-box;
+display: flex;
+flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+input[name^="user"],
+select {
+    width: 75%;
+    margin: 5px 0;
+}
+
+
 #zip {
     width: 25%;
+margin-right: 50%;
+}
+
+.label1 {
+    margin-left: 20px;
 }
 
 }

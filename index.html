@@ -22,20 +22,21 @@
                 <form action="index.html" method="post">
                     <fieldset class="form1">
                         <legend><h2>Contact Information</h2></legend>
+                        <div class="info"> 
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" name="username" placeholder="Required">
+                            <input type="text" id="name" name="username" placeholder="Required"></div>
 
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="usermail" placeholder="Required">
+                            <div class="info"><label for="email">Email Address</label>
+                            <input type="email" id="email" name="usermail" placeholder="Required"></div>
 
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="userphone">
+                            <div class="info"><label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="userphone"></div>
                             
-                            <label for="city">City</label>
-                            <input type="text" id="city" name="usercity">
+                            <div class="info"><label for="city">City</label>
+                            <input type="text" id="city" name="usercity"></div>
 
-                            <label for="state">State</label>
-                            <select id="state" name="userstate">
+                            <div class="info"><label for="state">State</label>
+                           <select id="state" name="userstate">
                                 <option value="" disabled selected>Choose State</option>                               
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -88,23 +89,23 @@
                                     <option value="WV">West Virginia</option>
                                     <option value="WI">Wisconsin</option>
                                     <option value="WY">Wyoming</option>
-                                </select>	
+                                </select></div>
 
-                            <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="userzip"><hr class="break2">
+                                <div class="info"><label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="userzip"></div><hr class="break2">
                         </fieldset>
 <fieldset class="form2">
     <legend><h2>Newsletter</h2></legend>
                         <label>Select the newsletters you would like to receieve</label><br>
-                            <input id="html" type="checkbox" value="htmlnews" name="news1"><label for="html">HTML News</label><br>
+                            <input id="html" type="checkbox" value="htmlnews" name="news1"><label for="html" class="label1">HTML News</label><br>
 
-                            <input id="css" type="checkbox" value="chckbox" name="news1"> <label for="css">CSS News</label><br>
+                            <input id="css" type="checkbox" value="chckbox" name="news1"> <label for="css" class="label1">CSS News</label><br>
 
-                            <input id="java" type="checkbox" value="javanews" name="news1"> <label for="java">Javascript News</label><br>
+                            <input id="java" type="checkbox" value="javanews" name="news1"> <label for="java" class="label1">Javascript News</label><br>
 
                         <label>Newsletter format</label><br>
-                            <input type="radio" id="htmlradio"  value="html_" name="forms"><label for="html_">HTML</label><br>
-                            <input type="radio" id="plaintext" value="plain_" name="forms"><label for="plain_">Plain text</label>
+                            <input type="radio" id="htmlradio"  value="html_" name="forms"><label class="label1" for="htmlradio">HTML</label><br>
+                            <input type="radio" id="plaintext" value="plain_" name="forms"><label class="label1" for="plaintext">Plain text</label><br>
 
                         <label for="txt">Other topics you'd like to hear about</label>
 
